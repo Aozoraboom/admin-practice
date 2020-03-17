@@ -29,7 +29,7 @@ class Login extends Component {
             storageUtils.saveUser(user);
             // memoryUtils.user = user;  // 保存在内存中
             // 跳转到管理界面(不需要回退到登录，所以用replace)
-            this.props.history.replace('/');
+            this.props.history.replace('/home');
           } else { // 登录失败
             message.error(result.msg)
           }
